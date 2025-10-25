@@ -1,21 +1,100 @@
-MIT License
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>REZ On Bridge — Careers & Latest Jobs</title>
 
-Copyright (c) 2019 Ritwick Dey
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.svg" alt="REZ On Bridge logo" class="logo">
+        <span class="brand-name">REZ On Bridge</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#tips">Career Tips</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="toggle menu">☰</button>
+    </div>
+  </header>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Find your next opportunity with REZ On Bridge</h1>
+          <p class="subtitle">Latest jobs, career tips, and resources to help you land the role you want.</p>
+          <a href="#jobs" class="btn primary">Browse Latest Jobs</a>
+        </div>
+        <div class="hero-art">
+          <img src="images/hero-placeholder.svg" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+    <section id="jobs" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Latest Jobs</h2>
+          <p>Hand-picked openings updated regularly</p>
+        </div>
+
+        <div id="jobs-list" class="jobs-grid" aria-live="polite"></div>
+
+        <div class="pagination" id="jobs-pagination">
+          <button id="prev-page" class="btn" aria-label="Previous page">Prev</button>
+          <span id="page-info"></span>
+          <button id="next-page" class="btn" aria-label="Next page">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Career Tips</h2>
+          <p>Short, actionable advice to improve your job search</p>
+        </div>
+
+        <ul id="tips-list" class="tips-list"></ul>
+      </div>
+    </section>
+
+    <section id="subscribe" class="section subscribe">
+      <div class="container">
+        <h3>Subscribe for Job Alerts</h3>
+        <form id="subscribe-form" class="subscribe-form" aria-label="Subscribe form">
+          <input type="email" id="subscriber-email" placeholder="Your email" required>
+          <button type="submit" class="btn primary">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="muted"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand-footer"><img src="images/logo.svg" alt="" class="logo-mini"> REZ On Bridge</p>
+        <p class="muted">Connecting talent & opportunity</p>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Email">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
